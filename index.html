@@ -12,40 +12,67 @@
 </head>
 
 <body id="body">
+    <div class="contenedor-principal">
+        <header id="header">
+            <div class="header-logo">
+                <img id="header-img" src="" alt="Logo de la marca">
+            </div>
+            
+            <h1 id="title">Carros de golf</h1>
 
-    <header id="header">
-        <img id="header-img" src="" alt="">
-        <h1 id="title">Carros de golf</h1>
+        <nav id="nav-bar">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#">Caracteristicas</a></li>
+                <li><a class="nav-link" href="#">Funcionamiento</a></li>
+                <li><a class="nav-link" href="#">Precios</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav id="nav-bar">
-        <a class="nav-link" href="#">destino-caracteristicas</a>
-        <a class="nav-link" href="#">destino-funcionamiento</a>
-        <a class="nav-link" href="#">destino-precios</a>
-    </nav>
+        <main id="main">
+           <div class="contenedor">
+               <section class="form">
+                    <div class="subtitulo">
+                        <h2>Fabricación casera, se pueden personalizar consulte</h2> 
+                    </div>
+                                     
+                <form id="form" method="POST" action=" https://www.freecodecamp.com/email-submit)">
+                    <input id="email" type="email" placeholder=" Ingrese aqui su email" required>
+    
+                    <input id="submit" class="boton" type="submit" name="submit" value="boton-envio">
+                </form>
+               </section>
+           </div>
 
-    <main id="main">
+           <div class="contenedor">
+                <section>
+                    <div class="section-icono"><img src="" alt="Icono de materiales"></div>
+                    <div class="section-description">
+                        <h2>Materiales de Calidad</h2>
+                    <p>Los materiales usados en nuestros productos son de primera linea.Garantizando exelente terminación y duración</p>
+                    </div>
 
-        <form id="form" method="POST" action=" https://www.freecodecamp.com/email-submit)">
-            <input id="email" type="email placeholder=" Ingrese su email" required>
+                    <div class="section-icono"><img src="" alt="Icono de envio"></div>
+                        <div class="section-description">
+                            <h2>Envio rápido</h2>
+                            <p>Si elige un producto terminado el cual no haya que personalizar el envio es inmediato.</p>
+                        </div>
+                </section>
+           </div>
 
-            <input id="submit" type="submit" name="submit">
-        </form>
+            <iframe id="video" width="450" height="300" src="https://www.youtube.com/enbed/ovdrmkV9mU4" frameborder="0">
+            </iframe>
 
-        <video id="video" width="300" height="220" >
-            <source  src="https://www.youtube.com/embed/v=ovdrmkV9mU4">
-            Video demostracion de armado
-        </video>
+            <footer id="footer">
+                <ul>
+                    <li> <a class="footer-link" href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos</a></li>
+                    <li><a class="footer-link" href="#">Contacto</a></li>
+                </ul>
 
-        <iframe width="450" height="300" src="https://www.youtube.com/enbed/ovdrmkV9mU4" frameborder="0"></iframe>
-
-        <footer id="footer">
-            <a class="footer-link" href="#">Privacidad</a>
-            <a class="footer-link" href="#">Terminos</a>
-            <a class="footer-link" href="#">Contacto</a>
-            <p id="footer-p">© Copyright 2021. All Rights Reserved. By <i>Darfiel</i></p>
-        </footer>
-
+                <p id="footer-p">© Copyright 2021. All Rights Reserved. By <i>Darfiel</i></p>
+            </footer>
+    </div>
     </main>
 </body>
 
