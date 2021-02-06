@@ -7,7 +7,8 @@
     <meta name="ketwords" content="Html Css">
     <meta name="name" content="Ridanm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Form_Style/form.css">
+    <link rel="stylesheet" href="/style/producto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Form Challenge</title>
 </head>
 
@@ -15,63 +16,104 @@
     <div class="contenedor-principal">
         <header id="header">
             <div class="header-logo">
-                <img id="header-img" src="" alt="Logo de la marca">
+                <span class="material-icons">electric_rickshaw</span>
             </div>
-            
+
             <h1 id="title">Carros de golf</h1>
 
-        <nav id="nav-bar">
-            <ul class="nav-list">
-                <li><a class="nav-link" href="#">Caracteristicas</a></li>
-                <li><a class="nav-link" href="#">Funcionamiento</a></li>
-                <li><a class="nav-link" href="#">Precios</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav id="nav-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#section-caracteristicas">Caracteristicas</a></li>
+                    <li><a class="nav-link" href="#video">Funcionamiento</a></li>
+                    <li><a class="nav-link" href="#section-precios">Precios</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <main id="main">
-           <div class="contenedor">
-               <section class="form">
+            <div class="contenedor">
+                <section class="form">
                     <div class="subtitulo">
-                        <h2>Fabricación casera, se pueden personalizar consulte</h2> 
+                        <h2>Fabricación manual, personazisables a su elección</h2>
                     </div>
-                                     
-                <form id="form" method="POST" action=" https://www.freecodecamp.com/email-submit)">
-                    <input id="email" type="email" placeholder=" Ingrese aqui su email" required>
-    
-                    <input id="submit" class="boton" type="submit" name="submit" value="boton-envio">
-                </form>
-               </section>
-           </div>
 
-           <div class="contenedor">
-                <section>
-                    <div class="section-icono"><img src="" alt="Icono de materiales"></div>
+                    <form id="form" method="POST" action=" https://www.freecodecamp.com/email-submit)">
+                        <input id="email" type="email" placeholder=" Ingrese aqui su email" required>
+
+                        <input id="submit" class="btn" type="submit" name="submit" value="boton-envio">
+                    </form>
+                </section>
+            </div>
+
+            <div class="contenedor">
+                <section id="section-caracteristicas">
+                    <div class="section-icono"><span class="material-icons">eco</span></div>
                     <div class="section-description">
                         <h2>Materiales de Calidad</h2>
-                    <p>Los materiales usados en nuestros productos son de primera linea.Garantizando exelente terminación y duración</p>
+                        <p>Los materiales para la fabricación de nuestros productos son de alta calidad.</p>
+                        <p>Garantizando exelente terminación y duración.</p>
                     </div>
 
-                    <div class="section-icono"><img src="" alt="Icono de envio"></div>
-                        <div class="section-description">
-                            <h2>Envio rápido</h2>
-                            <p>Si elige un producto terminado el cual no haya que personalizar el envio es inmediato.</p>
-                        </div>
-                </section>
-           </div>
+                    <div class="section-icono"><span class="material-icons">local_shipping</span></div>
+                    <div class="section-description">
+                        <h2>Envio Rápido</h2>
+                        <p>Si elige un producto terminado el cual no haya que personalizar el envio es inmediato.</p>
+                        <p>En caso de querer personalizarlo a su gusto se le informara el tiempo de demora que el mismo
+                            tendra.</p>
+                    </div>
 
-            <iframe id="video" width="450" height="300" src="https://www.youtube.com/enbed/ovdrmkV9mU4" frameborder="0">
+                    <div class="section-icono"><span class="material-icons">architecture</span></div>
+                    <div class="section-description">
+                        <h2>Calidad Garantizada</h2>
+                        <p>Nos aseguramos de probar y revisar minusiosamente su producto antes de ser enviado, contado
+                            con respaldo y garantia en su funcionamiento.</p>
+                        <p>Para su respaldo contamos con una amplia red de distribuidores y servicios de mantinimiento.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <iframe id="video" width="250" height="200" src="https://www.youtube.com/enbed/ovdrmkV9mU4" frameborder="0">
             </iframe>
 
-            <footer id="footer">
-                <ul>
-                    <li> <a class="footer-link" href="#">Privacidad</a></li>
-                    <li><a href="#">Terminos</a></li>
-                    <li><a class="footer-link" href="#">Contacto</a></li>
-                </ul>
+            <div class="contenedor">
+                <section id="section-precios">
+                    <div id="link-precios" class="precios">
+                        <h3 class="titulo-precios">CARRO SIN MODIFICAR</h3>
+                        <span>$ 500</span>
+                        <p>Los cuales puede encontrar en el catalogo de la página listos para entrega</p>
+                        <button class="btn">Seleccionar</button>
+                    </div>
 
-                <p id="footer-p">© Copyright 2021. All Rights Reserved. By <i>Darfiel</i></p>
-            </footer>
+                    <div class="precios">
+                        <h3 class="titulo-precios">CARRO TAPIZADO MODIFICADO</h3>
+                        <span>$ 700</span>
+                        <p>La tapizeria la cual tiene un catalogo tiene un costo adicional segun elección</p>
+                        <button class="btn">Seleccionar</button>
+                    </div>
+
+                    <div class="precios">
+                        <h3 class="titulo-precios">CARRO MODIFICADO EN GENERAL</h3>
+                        <span>$ 1200</span>
+                        <p>Aqui podrá seleccionar tanto tapizados, colore de pintura, algunas modificacines en su
+                            estetica
+                            en general</p>
+                        <button class="btn">Seleccionar</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="contenedor">
+                <footer id="footer">
+                    <ul>
+                        <li> <a class="footer-link" href="#">Privacidad</a></li>
+                        <li><a href="#">Terminos</a></li>
+                        <li><a class="footer-link" href="#">Contacto</a></li>
+                    </ul>
+
+                    <p id="footer-p">© Copyright 2021. All Rights Reserved. By <i>Darfiel</i></p>
+                </footer>
+            </div>
     </div>
     </main>
 </body>
