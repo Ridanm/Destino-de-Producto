@@ -1,4 +1,136 @@
+.root{
+    --text-colo: #00ff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+ 
+#body{
+    display: flex;
+    background-color: rgb(226, 224, 226);
+}
+
+.contenedor-principal{
+    flex: 1;
+}
+
+#header{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;  
+    background-color:rgb(135, 211, 211);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    padding: 5px;
+}
+
+.nav-link{
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-link:hover{
+    color: rgb(165, 114, 152);
+    border-bottom: 2px solid #333;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+
+.header-logo h1{
+    font-size: 25px;
+}
+
+#header-img{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    color: red;
+}
+ 
+.email-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#email{
+    margin: 15px;
+    width: 300px;
+    padding: 7px;
+}
+
+.btn{
+    width: 150px;
+    padding: 7px;
+    border-radius: 6px;
+    background-color:rgb(135, 211, 211);
+    border: none;
+}
+ 
+.caractiristicas{
+    display: flex;
+    color:rgb(165, 114, 152);
+   
+}
+
+.section-icono{
+    display: flex;
+    padding: 20px;
+}
+
+
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.material-icons>h2{
+    flex-direction: row;
+}
+
+@media (max-width: 650px){
+    #header{
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .nav-link{
+        margin: 0 auto;
+      
+    }
 }

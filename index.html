@@ -16,10 +16,9 @@
     <div class="contenedor-principal">
         <header id="header">
             <div class="header-logo">
-                <span class="material-icons">electric_rickshaw</span>
+                <span id="header-img" class="material-icons">electric_rickshaw</span>
+                <h1 id="title">Carros de golf</h1>
             </div>
-
-            <h1 id="title">Carros de golf</h1>
 
             <nav id="nav-bar">
                 <ul class="nav-list">
@@ -33,48 +32,65 @@
         <main id="main">
             <div class="contenedor">
                 <section class="form">
-                    <div class="subtitulo">
-                        <h2>Fabricación manual, personazisables a su elección</h2>
-                    </div>
+                    <h2>Fabricación manual, personazisables a su elección</h2>
 
-                    <form id="form" method="POST" action=" https://www.freecodecamp.com/email-submit)">
-                        <input id="email" type="email" placeholder=" Ingrese aqui su email" required>
+                    <form id="form" class="email-form" method="POST"
+                        action=" https://www.freecodecamp.com/email-submit)">
+                        <input id="email" type="email" placeholder=" Ingrese aqui su email para empezar" required>
 
-                        <input id="submit" class="btn" type="submit" name="submit" value="boton-envio">
+                        <input id="submit" class="btn" type="submit" name="submit" value="Comenzar">
                     </form>
                 </section>
             </div>
 
             <div class="contenedor">
-                <section id="section-caracteristicas">
-                    <div class="section-icono"><span class="material-icons">eco</span></div>
-                    <div class="section-description">
+                <section class="caracteristicas">
+
+                    <div class="section-icono"><span class="material-icons">eco</span>
                         <h2>Materiales Ecológicos</h2>
-                        <p>Los materiales para la fabricación de nuestros productos son de alta calidad.</p>
-                        <p>Garantizando exelente terminación y duración.</p>
-                        <p>Su funcionamiento con baterias de última generación aseguran mayor autonomia, menos consumo en su recarga.</p>
                     </div>
+                        <div class="section-descriotion">
+                            <p>Los materiales para la fabricación de nuestros productos son de alta calidad.</p>
+                            <p>Garantizando exelente terminación y duración.</p>
+                            <p>Su funcionamiento con baterias de última generación aseguran mayor autonomia, menos
+                                consumo
+                                en su recarga.</p>
+                        </div>
+                    
 
-                    <div class="section-icono"><span class="material-icons">local_shipping</span></div>
-                    <div class="section-description">
+                    <div class="section-icono"><span class="material-icons">local_shipping</span>
                         <h2>Envio Rápido</h2>
-                        <p>Si elige un producto terminado el cual no haya que personalizar el envio es inmediato.</p>
-                        <p>En caso de querer personalizarlo a su gusto se le informara el tiempo de demora que el mismo
-                            tendra.</p>
                     </div>
+                        <div class="section-descriotion">
+                            <p>Si elige un producto terminado el cual no haya que personalizar el envio es inmediato.
+                            </p>
+                            <p>En caso de querer personalizarlo a su gusto se le informara el tiempo de demora que el
+                                mismo
+                                tendra.</p>
+                        </div>
+                    
 
-                    <div class="section-icono"><span class="material-icons">architecture</span></div>
-                    <div class="section-description">
+                    <div class="section-icono"><span class="material-icons">architecture</span>
                         <h2>Calidad Garantizada</h2>
-                        <p>Nos aseguramos de probar y revisar minusiosamente su producto antes de ser enviado, contado
-                            con respaldo y garantia en su funcionamiento.</p>
-                        <p>Para su respaldo contamos con una amplia red de distribuidores y servicios de mantinimiento.
-                        </p>
                     </div>
+                        <div class="section-descriotion">
+                            <p>Nos aseguramos de probar y revisar minusiosamente su producto antes de ser enviado,
+                                contado
+                                con respaldo y garantia en su funcionamiento.</p>
+                            <p>Para su respaldo contamos con una amplia red de distribuidores y servicios de
+                                mantinimiento.
+                            </p>
+                        </div>
+                    
                 </section>
             </div>
 
-            <iframe width="540" height="320" src="https://www.youtube.com/embed/ovdrmkV9mU4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video">
+                <iframe id="video" width="540" height="320" src="https://www.youtube.com/embed/ovdrmkV9mU4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
 
             <div class="contenedor">
                 <section id="section-precios">
