@@ -12,27 +12,27 @@
 }
  
 #body{
-    display: flex;
     background-color: rgb(226, 224, 226);
 }
 
 .contenedor-principal{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #header{
     display: flex;
-    width: 100vw;
-    justify-content: space-between;  
+    justify-content: space-between;
+    align-items: center;  
     background-color:rgb(135, 211, 211);
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .nav-list{
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -40,16 +40,19 @@
     padding: 5px;
 }
 
+.nav-list li:hover{
+    background-color: rgb(146, 192, 145);
+    border-radius: 7px;
+}
+
 .nav-link{
     text-decoration: none;
-    margin-right: 70px;
-    font-size: 16px;
+    font-size: 17px;
     color: rgb(0, 0, 0);
 }
 
 .nav-link:hover{
-    color: rgb(165, 114, 152);
-    border-bottom: 2px solid #333;
+    color: rgb(46, 42, 45);
 }
 
 .header-logo{
@@ -68,21 +71,31 @@
     margin-left: 20px;
 }
 
-.contenedor{
+.caracteristicas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     color: red;
 }
  
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h2{
+    text-align: center;
+    padding: 15px;
+}
+
 .email-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 #email{
@@ -104,24 +117,27 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 30px;
+    max-width: 860px;
 }
 
 .section-icono{
     display: flex;
-    width: 70px;
+    margin: 0 30px;
     color: blue;
 }
 
 .section-description{
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
 }
 
 .video{
     display: flex;
     justify-content: center;
+    align-self: center;
 }
+
 
 #section-precios{
     display: flex;
@@ -133,9 +149,9 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    width: calc(100%/3);
     padding: 0 0 18px 0;
     margin: 30px;
+    width: calc(100% / 3);
 }
 
 .title-price{
@@ -145,14 +161,46 @@
     margin-bottom: 18px;
 }
 
-@media (max-width: 650px){
+@media(max-width: 800px){
     #header{
-    flex-direction: column;
-    width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        background-color:rgb(135, 211, 211);
+        border-radius: 8px;
+        padding: 10px;
     }
 
-    .nav-link{
-        margin: 0 auto;
-      
+    .section-icono{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .video #video{
+        width: 85%;
+        height: 240px;
+    }
+}
+ 
+@media(max-width: 425px){
+    #header{
+        padding: 5px;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: red;
+    }
+
+    #email{
+        width: 100%;
+    }
+
+    .btn{
+        width: 40%;
     }
 }
