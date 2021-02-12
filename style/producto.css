@@ -136,6 +136,7 @@
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-top: 40px;
 }
 
 
@@ -171,16 +172,16 @@
         border-radius: 8px;
         padding: 10px;
     }
-
-    .section-icono{
-        display: none;
-    }
 }
 
 @media(max-width: 600px){
     .video #video{
         width: 85%;
         height: 240px;
+    }
+    
+    .section-icono{
+        display: none;
     }
 }
  
